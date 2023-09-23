@@ -38,7 +38,7 @@ class LessonNote(StrEnum):
 
 class Lesson:
 
-    def __init__(self, code: str, credit: int, note: LessonNote, state: LessonState, prev_note: LessonNote = LessonNote.FF):
+    def __init__(self, code: str, credit: int, note: LessonNote, state: LessonState = LessonState.New, prev_note: LessonNote = LessonNote.FF):
         self.code = code
         self.credit = credit
         self.note = note
